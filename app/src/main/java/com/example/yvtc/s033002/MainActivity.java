@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         SimpleAdapter adapter = new SimpleAdapter(MainActivity.this, mylist,
-                android.R.layout.simple_list_item_2, new String[] {"city", "code"},
-                new int[] {android.R.id.text1, android.R.id.text2});
+                R.layout.myitem, new String[] {"city", "code"},
+                new int[] {R.id.textView, R.id.textView2});
         lv.setAdapter(adapter);
     }
 }
